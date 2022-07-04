@@ -35,7 +35,6 @@ const Sidebar = () => {
                 <p className="text-gray-400 m-3 mt-4 uppercase">
                   {link.title}
                 </p>
-                <MdOutlineCancel />
                 {link.links.map((item) => (
                   <NavLink
                     to={`/${item.name}`}
