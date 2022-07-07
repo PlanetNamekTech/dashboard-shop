@@ -2,11 +2,10 @@ import { ChartComponent, SeriesCollectionDirective, SeriesDirective, Inject, Lin
 
 import { lineCustomSeries, LinePrimaryYAxis, LinePrimaryXAxis } from '../../data/dummy';
 import { useStateContext } from "../../contexts/ContextProvider";
-import { useState } from "react";
 
 const LineChart = () => {
 
-    const { currentMode, currentColor } = useStateContext();
+    const { currentMode } = useStateContext();
 
     return (
         <ChartComponent

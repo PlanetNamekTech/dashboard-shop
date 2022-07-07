@@ -1,8 +1,12 @@
-import { SparklineComponent, Inject, SparklineTooltip, TrackLineSettings } from "@syncfusion/ej2-react-charts";
+import React from 'react';
 
-const SparkLine = ({currentColor, id, height, width, color, type, data}) => {
+import { SparklineComponent, Inject, SparklineTooltip } from "@syncfusion/ej2-react-charts";
+
+//Changed to class componenet to fix resizing issue
+class SparkLine extends React.PureComponent {
+  render() {
+    const {currentColor, id, height, width, color, type, data} = this.props
   return (
-    <div>
       <SparklineComponent
         id={id}
         height={height}
@@ -18,16 +22,16 @@ const SparkLine = ({currentColor, id, height, width, color, type, data}) => {
             visible: true
           },
         }}
+        markerSettings={{ visible: ['All'], size: 2.5, fill: currentColor }}
         dataSource={data}
         xName="x"
         yName="yval"
         type={type}
       >
         <Inject services={[SparklineTooltip]} />
-
       </SparklineComponent>
-    </div>
   );
-}
+}}
+
 
 export default SparkLine;
