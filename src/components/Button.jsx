@@ -1,13 +1,16 @@
-const Button = ({ bgColor, color, size, text, borderRadius}) => {
-    return ( <div>
-        <button
-        type="button"
-        style={{ backgroundColor: bgColor, color, borderRadius }}
-        className={`text-${size} p-3 hover:dropshadow-xl`}>
-            {text}
+import { useStateContext } from "../contexts/ContextProvider";
 
+const Button = ({ icon, bgColor, bgHoverColor, color, size, text, borderRadius}) => {
+    const { setIsClicked, initialState } = useStateContext();
+    return ( 
+        <button
+            type="button"
+            onClick={() => setIsClicked(initialState)}
+            style={{ backgroundColor: bgColor, color, borderRadius }}
+            className={`text-${size} p-3 hover:dropshadow-xl hover:bg-${bgHoverColor}`}>
+                {icon}{text}
         </button>
-    </div> );
+);
 }
  
 export default Button;

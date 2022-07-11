@@ -35,12 +35,9 @@ const App = () => {
             </div>
           )}
           <div className={
-            //Classes applied whether menu is active or not
-            `dark:bg-main-dark-bg bg-main-bg 
-            min-h-screen w-full
-            ${activeMenu 
-              ? 'md:ml-72'
-              : 'flex-2'}`
+            activeMenu
+                ? 'dark:bg-main-dark-bg  bg-main-bg min-h-screen md:ml-72 w-full  '
+                : 'bg-main-bg dark:bg-main-dark-bg  w-full min-h-screen flex-2 '
             //Ternary operator to apply classes whether menu is active or not
           }>
             <div className="fixed md:static bg-main-bg dark:bg-main-dark-bg navbar w-full">
@@ -80,3 +77,5 @@ const App = () => {
 }
 
 export default App;
+
+
