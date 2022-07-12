@@ -11,7 +11,7 @@ Mini apps include :
 
 ### [Visit the site here](https://shoppysyncfusion-dashboard.netlify.app/ "Shoppy Syncfusion Dashboard site")
 
-![Dashboard Image](./README-images/homepage.png)
+![Dashboard Image](/README-images/homepage.png)
 
 To run the project, all that's needed are these commands:
 
