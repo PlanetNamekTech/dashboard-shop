@@ -14,10 +14,10 @@ Mini apps include :
 ![Dashboard Image](/README-images/homepage.png "Shoppy home page")
 ![Dashboard Image](./README-images/homepage.png "Shoppy home page")
 ![Dashboard Image](README-images/homepage.png "Shoppy home page")
-![Dashboard Image](https://github.com/PlanetNamekTech/dashboard-shop/tree/main/README-images/homepage.png "Shoppy home page")
+![Dashboard Image](https://github.com/PlanetNamekTech/dashboard-shop/blob/main/README-images/homepage.PNG "Shoppy home page")
 <img src="./README-images/homepage.png" />
 <img src="/README-images/homepage.png" />
-<img src="https://github.com/PlanetNamekTech/dashboard-shop/tree/main/README-images/homepage.png" width="500" height="auto"/>
+<img src="https://github.com/PlanetNamekTech/dashboard-shop/blob/main/README-images/homepage.PNG" width="500" height="auto"/>
 
 To run the project, all that's needed are these commands:
 
